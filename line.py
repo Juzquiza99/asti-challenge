@@ -8,6 +8,7 @@ import time
 rr = RRB3(5, 4)
 izquierda = 2
 derecha = 17
+lee2=""
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(izquierda, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(derecha, GPIO.IN, pull_up_down=GPIO.PUD_UP)
