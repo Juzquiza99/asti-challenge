@@ -57,11 +57,11 @@ try:
         		lee2 = readkey()
         		if GPIO.input(derecha) == GPIO.LOW and GPIO.input(izquierda) == GPIO.LOW:
         			rr.set_motors(0.3,0,0.3,0)
-    			elif GPIO.input(derecha) == GPIO.HIGH:
+    			if GPIO.input(derecha) == GPIO.HIGH:
     				rr.set_motors(0.3,0,0.1,0)
-				elif GPIO.input(izquierda) == GPIO.HIGH:
+				if GPIO.input(izquierda) == GPIO.HIGH:
 					rr.set_motors(0.1,0,0.3,0)
-				elif lee2 == salida:
+				if lee2 == salida:
 					raise KeyboardInterrupt
         elif LEER == salida:
             raise KeyboardInterrupt
