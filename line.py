@@ -6,13 +6,18 @@ import tty
 import termios
 import time
 rr = RRB3(5, 4)
+izquierda = 2
+derecha = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(izquierda, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(derecha, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-
+GPIO.setup(10, GPIO.OUT)
+GPIO.setup(25, GPIO.OUT)
+GPIO.setup(17, GPIO.OUT)
+GPIO.setup(4, GPIO.OUT)
+GPIO.setup(14, GPIO.OUT)
+GPIO.setup(24, GPIO.OUT)
 #Mapeo de teclas y sensores
-izquierda = 2
-derecha = 17
 empezar= "w"
 salida = "p"
 
