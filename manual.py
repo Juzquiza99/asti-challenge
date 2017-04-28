@@ -46,7 +46,7 @@ try:
         if LEER == DELANTE:
             print("Arranca")
             rr.forward()
-	    while lee2!=DELANTE:
+	    while lee2!=ATRAS:
 		lee2 = readkey()
                 if lee2 == IZQUIERDA:
                     rr.set_motors(0.4,0,1,0)
@@ -64,7 +64,7 @@ try:
         elif LEER == ATRAS:
             print("Marcha atras")
             rr.reverse()
-            while lee2!=ATRAS:
+            while lee2!=DELANTE:
                 lee2 = readkey()
                 if lee2 == IZQUIERDA:
                     rr.set_motors(0.4,1,1,1)
