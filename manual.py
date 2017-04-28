@@ -9,8 +9,8 @@ rr = RRB3(5, 4)
 #Mapeo de teclas
 DELANTE = "w"
 ATRAS = "s"
-DERECHA = "d"
-IZQUIERDA = "a"
+DERECHA = "a"
+IZQUIERDA = "d"
 SALIDA = "p"
 
 lee2=""
