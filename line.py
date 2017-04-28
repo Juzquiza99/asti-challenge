@@ -53,16 +53,15 @@ try:
         if LEER == empezar:
             print("Arranca")
             rr.set_motors(0.3,0,0.3,0)
-            while True:
+            while lee2!=salida:
         		lee2 = readkey()
         		if GPIO.input(derecha) == GPIO.LOW and GPIO.input(izquierda) == GPIO.LOW:
         			rr.set_motors(0.3,0,0.3,0)
-    			if GPIO.input(derecha) == GPIO.HIGH:
+    			elif GPIO.input(derecha) == GPIO.HIGH:
     				rr.set_motors(0.3,0,0.1,0)
-				if GPIO.input(izquierda) == GPIO.HIGH:
+				elif GPIO.input(izquierda) == GPIO.HIGH:
 					rr.set_motors(0.1,0,0.3,0)
-				if lee2 == salida:
-					raise KeyboardInterrupt
+			raise KeyboardInterrupt
         elif LEER == salida:
             raise KeyboardInterrupt
     
