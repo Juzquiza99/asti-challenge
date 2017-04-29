@@ -16,8 +16,6 @@ GPIO.setup(10, GPIO.OUT)
 GPIO.setup(25, GPIO.OUT)
 GPIO.setup(17, GPIO.OUT)
 GPIO.setup(4, GPIO.OUT)
-GPIO.setup(14, GPIO.OUT)
-GPIO.setup(24, GPIO.OUT)
 #Mapeo de teclas y sensores
 empezar= "w"
 salida = "p"
@@ -52,15 +50,14 @@ try:
         LEER = readkey()
         if LEER == empezar:
             print("Arranca")
-            rr.set_motors(0.3,0,0.3,0)
             while lee2!=salida:
         		lee2 = readkey()
         		if GPIO.input(derecha) == GPIO.LOW and GPIO.input(izquierda) == GPIO.LOW:
-        			rr.set_motors(0.3,0,0.3,0)
+        			rr.set_motors(0.5,0,0.5,0)
     			elif GPIO.input(derecha) == GPIO.HIGH:
-    				rr.set_motors(0.3,0,0.1,0)
+    				rr.set_motors(0,0,0.5,0)
 				elif GPIO.input(izquierda) == GPIO.HIGH:
-					rr.set_motors(0.1,0,0.3,0)
+					rr.set_motors(0.5,0,0,0)
 			raise KeyboardInterrupt
         elif LEER == salida:
             raise KeyboardInterrupt
