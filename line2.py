@@ -11,15 +11,13 @@ GPIO.setup(10, GPIO.OUT)
 GPIO.setup(25, GPIO.OUT)
 GPIO.setup(17, GPIO.OUT)
 GPIO.setup(4, GPIO.OUT)
-#rr.forward()
-#time.sleep(0.2)
 while True:
 		rr.set_motors(0.2,0,0.2,0)
 		if GPIO.input(derecha) == GPIO.LOW and GPIO.input(izquierda) == GPIO.LOW:
 			rr.set_motors(0.4,0,0.4,0)
 		elif GPIO.input(derecha) == GPIO.HIGH:
 			rr.set_motors(0,0,0.4,0)
-			time.sleep(0.2)
+			time.sleep(0.05)
 		elif GPIO.input(izquierda) == GPIO.HIGH:
 			rr.set_motors(0.4,0,0,0)
-			time.sleep(0.2)
+			time.sleep(0.05)
