@@ -11,7 +11,8 @@ GPIO.setup(10, GPIO.OUT)
 GPIO.setup(25, GPIO.OUT)
 GPIO.setup(17, GPIO.OUT)
 GPIO.setup(4, GPIO.OUT)
-while True:
+try:
+	while True:
 		if GPIO.input(derecha) == GPIO.LOW and GPIO.input(izquierda) == GPIO.LOW:
 			rr.set_motors(0.5,0,0.5,0)
 		elif GPIO.input(derecha) == GPIO.HIGH:
@@ -20,3 +21,6 @@ while True:
 		elif GPIO.input(izquierda) == GPIO.HIGH:
 			rr.set_motors(0.5,0,0,0)
 			time.sleep(0.05)
+except KeyboardInterrupt:
+	print("Sailendo del seguidor de linea")
+	GPIO.cleanup()
