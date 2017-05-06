@@ -3,7 +3,7 @@ from rrb3 import *
 import RPi.GPIO as GPIO
 import time
 #Voltaje de la placa
-rr = RRB3(5, 4)
+rr = RRB3(9, 6)
 #Puertos GPIO de los seguidores de linea
 izquierda = 2
 derecha = 3
@@ -19,13 +19,13 @@ GPIO.setup(4, GPIO.OUT)
 try:
 	while True:
 		if GPIO.input(derecha) == GPIO.LOW and GPIO.input(izquierda) == GPIO.LOW:
-				rr.set_motors(0.5,0,0.5,0)
+				rr.set_motors(0.2,0,0.2,0)
 		elif GPIO.input(derecha) == GPIO.HIGH:
-				rr.set_motors(0,0,0.5,0)
-				time.sleep(0.05)
+				while GPIO.input(derecha) == GPIO.HIGH:
+					rr.set_motors(0,0,0.15,0)
 		elif GPIO.input(izquierda) == GPIO.HIGH:
-				rr.set_motors(0.5,0,0,0)
-				time.sleep(0.05)
+				while GPIO.input(izquierda) == GPIO.HIGH:
+					rr.set_motors(0.15,0,0,0)
 #Sale del programa con CTRL + C
 except KeyboardInterrupt:
 	print("Sailendo del seguidor de linea")
