@@ -25,9 +25,9 @@ try:
 					rr.set_motors(0,0,0.15,0)
 		elif GPIO.input(izquierda) == GPIO.HIGH:
 				while GPIO.input(izquierda) == GPIO.HIGH:
-					rr.set_motors(0.15,0,0,0)f
-        elif GPIO.input(izquierda) == GPIO.HIGH and GPIO.input(derecha) == GPIO.HIGH:
-            pass
+					rr.set_motors(0.15,0,0,0)
+        	elif GPIO.input(izquierda) == GPIO.HIGH and GPIO.input(derecha) == GPIO.HIGH:
+           			 pass
 #Sale del programa con CTRL + C
 except KeyboardInterrupt:
 	print("Sailendo del seguidor de linea")
