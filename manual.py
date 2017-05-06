@@ -4,7 +4,7 @@ import sys
 import tty
 import termios
 import time
-rr = RRB3(9, 7)
+rr = RRB3(5, 4)
 
 #Mapeo de teclas
 DELANTE = "w"

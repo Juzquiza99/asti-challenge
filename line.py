@@ -3,7 +3,7 @@ from rrb3 import *
 import RPi.GPIO as GPIO
 import time
 #Voltaje de la placa
-rr = RRB3(9, 6)
+rr = RRB3(5, 4)
 #Puertos GPIO de los seguidores de linea
 izquierda = 2
 derecha = 3

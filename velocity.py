@@ -1,6 +1,6 @@
 #Librerias
 from rrb3 import *
-rr=RRB3(9, 8)
+rr=RRB3(5, 4)
 try:
 	while True:
 		rr.set_motors(0.9,0,1,0)
