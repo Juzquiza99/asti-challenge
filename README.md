@@ -13,7 +13,7 @@ Los participantes del proyecto Valbalt somos:
 
 Con este proyecto esperamos aprender gran cantidad de conocimientos acerca de robótica, programación, diseño gráfico. Además destancando el sentido ingenieril que permite llevar a cabo gracias a la posibilidad que nos ofrece el estar en contacto desde el primer minuto con todos sus ámbitos de desarrollo.
 
-Edit: Ganamos el desafio. Autor: Javier Uzquiza
+Edit: Ganamos el desafio. Autor del artículo: Javier Uzquiza
 
 
 
