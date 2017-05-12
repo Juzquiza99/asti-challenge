@@ -15,6 +15,11 @@ Con este proyecto esperamos aprender gran cantidad de conocimientos acerca de ro
 
 Edit: Ganamos el desafio. Autor: Javier Uzquiza
 
+
+
+
+
+
 Por fin llegó el día de la competición, los nervios estaban a flor de piel, sin embargo, a pesar de no haber dormido la noche anterior, por preparar nuestro robot, nos sentíamos llenos de emoción y de orgullo por representar a nuestro pueblo en el Asti Challenge.
 
 La jornada no comenzó con buen pie, pues por desgracia, uno de los motores reductores no funcionaba a máxima potencia y nuestro pequeño tractor se desviaba demasiado. Aunque este problema sería subsanado mediante programación y recalibración de potencia. Con mucho miedo, empezamos nuestra primera prueba, "El Laberinto", de la cual logramas superar gran parte del recorrido, ganando mucha seguridad y tranquilidad.
